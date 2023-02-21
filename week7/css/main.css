@@ -8,6 +8,28 @@ body{
     color: #181818;
     /* Adding background image */
     background-image: url(../images/white_brick_wall.png);
+    padding-top: 92px;
+}
+
+/* Box Model example */
+section p{
+    width: 50%;
+    /* Single Valiue- top/bottom/left/right */
+    /* Two values - first value = top + bottom, second value = left + right */
+    padding: 1em .5em;
+    /* top right bottom left */
+    margin: 1em 2em 2em 2em;
+    border-bottom: 2px solid black;
+}
+
+.container{
+    /* akways create a container containing everything inside the body tag */
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+img{
+    width: 100%;
 }
 
 h1{
@@ -25,8 +47,16 @@ h1,h2,h3,h4{
 nav ul{
     list-style: none;
 }
+
+nav ul li{
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
 /* Selecting child elements with multiple levels */
 nav ul a{
+    display: block;
     color: darkslategray;
     text-decoration: none;
     font-size: 1.5rem;
@@ -53,7 +83,20 @@ nav ul a{
     
     /* height: 100vh; */
     /* height is 100% of the browser size and ii's dynamic */
-    
+    position: relative;
+}
+
+.blue-link.large-text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.blue-link{
+    /* em= 1.5 x fontsize*/
+    padding: 1.5em;
+    width: 300px;
+    display: block;
 }
 
 #treatofweek::after{
@@ -72,6 +115,26 @@ nav ul a{
 .large-text{
     font-size: 20px;
 }
+
+article,
+aside {
+    
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside{
+    width: 20%;
+}
+
+section{
+    clear: both;
+}
+
 
 .white-text{
     color: antiquewhite;
@@ -115,6 +178,17 @@ border: 4px solid darkslategray
 
 /* Psuedo Classes */
 /* Styling Navigation */
+
+/* Fixed navigation */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
 
 nav ul a,
 nav ul a:link,
