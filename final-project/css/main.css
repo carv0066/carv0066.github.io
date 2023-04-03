@@ -1,0 +1,11 @@
+nav .navig {
+    margin: 0 auto;
+    text-align: center;
+    list-style-type:none;
+    text-decoration: none;
+}
+
+.navig a:link{
+    color: goldenrod;
+    text-decoration: none;
+}
