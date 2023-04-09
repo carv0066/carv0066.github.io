@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="/final-project/css/reset.css">
     <link rel="stylesheet" href="/final-project/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400;1,800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <title>Three Star Media</title>
 </head>
 
@@ -20,50 +25,51 @@
 
             <div class="nav-items">
                 <nav>
-                    <img src="images/logo.png" alt="Logo">
                     <ul class="navig">
+                        <li class="mobile-logo"><img src="images/logo.png" alt="Logo"></li>
                         <li><a href="index.html" class="current">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <form class="search-bar">
+                                <input type="search" placeholder="Search" name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </li>
                     </ul>
-                    <div class="search-container">
-                        <form>
-                            <input type="text" placeholder="Search" name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
                 </nav>
+
             </div>
-
-
-            <!-- Adding big image and hero section -->
-
-            <div class="main-banner">
-
-                <div class="hero-box">
-                    <h1>Welcome to Three Star Media</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus asperiores impedit
-                        deleniti ex eaque esse labore recusandae expedita minima, dicta blanditiis laborum officia
-                        commodi
-                        quisquam neque harum praesentium magnam! Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.
-                    </p>
-                    <button>Connect with us<i class="fa-sharp fa-solid fa-play"></i></button>
-                </div>
-
-                <img src="images/main-banner.jpg" alt="main banner">
-            </div>
-            <!-- Closing big image hero section  -->
         </header>
+
+        <!-- Adding big image and hero section -->
+
+        <div class="main-banner">
+
+            <img src="images/main-banner.jpg" alt="main banner" class="bg-img">
+
+            <div class="hero-box">
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus asperiores impedit
+                    deleniti ex eaque esse labore recusandae expedita minima, dicta blanditiis laborum officia
+                    commodi
+                
+                </p>
+                <button>Connect with us<i class="fa-sharp fa-solid fa-play"></i></button>
+            </div>
+
+        </div>
+        <!-- Closing big image hero section  -->
 
         <!-- Closing Header -->
         <main>
 
             <!-- About Us -->
+            <!-- Added an Id in each section to be able to jump to that section of the page -->
 
-            <section class="about-us">
+            <section class="about-us" id="about">
                 <div>
                     <div class="ping-pong">
                         <img src="images/about-us.jpg" alt="Ping pong table">
@@ -86,7 +92,7 @@
 
             <!-- Our Services -->
 
-            <section class="our-services">
+            <section class="our-services" id="services">
                 <h2>Our Services</h2>
 
                 <!-- Creating Cards for each service -->
@@ -186,7 +192,7 @@
 
             <!-- Company's Team -->
 
-            <section class="team">
+            <section class="team" id="team">
                 <h2>Our Team</h2>
 
                 <!-- Team Member -->
@@ -224,58 +230,59 @@
                         </div>
                     </div>
                 </article>
+            </section>
 
-                <!-- Contact forms -->
+            <!-- Contact forms -->
 
-                <section class="contact">
-                    <h2>Contact Us</h2>
-                    <div>
-                        <h3>Send us a message</h3>
-                        <form>
-                            <label for="fname">Full Name</label><br>
-                            <input type="text" id="fname" name="fname"><br>
-                            <label for="email-add">Email</label><br>
-                            <input type="email" id="email-add" name="email-add"><br>
-                            <label for="message">Message</label><br>
-                            <textarea name="message" id="message" cols="50" rows="10"></textarea><br>
-                            <button>Send</button>
-                        </form>
-                    </div>
+            <section class="contact" id="contact">
+                <h2>Contact Us</h2>
+                <div>
+                    <h3>Send us a message</h3>
+                    <form>
+                        <label for="fname">Full Name</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="email-add">Email</label><br>
+                        <input type="email" id="email-add" name="email-add"><br>
+                        <label for="message">Message</label><br>
+                        <textarea name="message" id="message" cols="50" rows="10"></textarea><br>
+                        <button>Send</button>
+                    </form>
+                </div>
 
-                    <!-- Adding a table -->
+                <!-- Adding a table -->
 
-                    <div>
-                        <h3>Hours of Operation</h3>
-                        <table>
+                <div>
+                    <h3>Hours of Operation</h3>
+                    <table>
 
-                            <tr>
-                                <td>Days</td>
-                                <td>Hours</td>
-                            </tr>
+                        <tr>
+                            <td>Days</td>
+                            <td>Hours</td>
+                        </tr>
 
-                            <tr>
-                                <td>Monday - Friday</td>
-                                <td>9 AM - 6 PM</td>
-                            </tr>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9 AM - 6 PM</td>
+                        </tr>
 
-                            <tr>
-                                <td>Saturday - Sunday</td>
-                                <td>Closed</td>
-                            </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>Closed</td>
+                        </tr>
 
-                        </table>
-                    </div>
+                    </table>
+                </div>
 
-                    <!-- Embedding a map -->
+                <!-- Embedding a map -->
 
-                    <div class="map">
-                        <h2>Location</h2>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385676094!2d-75.75712548448344!3d45.349927779099716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1ses-419!2sca!4v1680029759574!5m2!1ses-419!2sca"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </section>
+                <div class="map">
+                    <h2>Location</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385676094!2d-75.75712548448344!3d45.349927779099716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1ses-419!2sca!4v1680029759574!5m2!1ses-419!2sca"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
         </main>
 
         <footer>
