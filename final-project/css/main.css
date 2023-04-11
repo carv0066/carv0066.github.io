@@ -1,107 +1,333 @@
  html {
-    font-family: 'Open Sans', sans-serif;
-    
-}
+     font-family: 'Open Sans', sans-serif;
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    
-}
+ }
 
-/* Navigation */
-.navig .mobile-logo {
-    display: flex;
-    background-color: #c78c06;
-}
+ .container {
+     max-width: 1200px;
+     margin: 0 auto;
 
-nav .navig {
-  text-align: center;
-  list-style-type: none;
-  text-decoration: none;
-}
+ }
 
-.navig a,
-.navig a:link,
-.navig a:visited{
-    display: block;
-    padding: 1em 0;
-    text-decoration: none;
-    background-color: #222;
-    color: #c78c06;
-}
+ /* Navigation */
 
-.navig a:hover,
-.navig a:focus,
-.navig a.current{
-    background-color: #c78c06;
-    color: #222;
-}
+ /* I add flex to make logo stay on the left and not the center */
+ .navig .mobile-logo {
+     display: flex;
+     background-color: #c78c06;
+ }
 
-.search-bar{
-    display: flex;
-    justify-content: center;
-    background-color: #222;
-    padding: 0.5em;
-}
+ nav .navig {
+     text-align: center;
+     list-style-type: none;
+     text-decoration: none;
+     border: 10px solid #222;
+ }
 
-.search-bar input[type='search']{
-    width: 90%;
-    height: 2.2em;
-}
+ /* add color for navigation for how it will looks before clicking on it and after clicking on it */
+ .navig a,
+ .navig a:link,
+ .navig a:visited {
+     display: block;
+     padding: 1em 0;
+     text-decoration: none;
+     background-color: #222;
+     color: #c78c06;
+ }
 
-.search-bar button[type='submit']{
-    background-color: #222;
-    color: #c78c06;
-    border: 1px solid #c78c06;
-    padding: 5px;
-}
 
-/* Header */
+ /* add color for navigation for how it will look before hovering on it and while clicking on it  */
+ .navig a:hover,
+ .navig a:focus,
+ .navig a.current {
+     background-color: #c78c06;
+     color: #222;
+ }
 
-.main-banner{
+ .search-bar {
+     display: flex;
+     justify-content: center;
+     background-color: #222;
+ }
+
+ .search-bar input[type='search'] {
+     width: 90%;
+     height: 2.2em;
+ }
+
+  .search-bar button[type='submit'] {
+     background-color: #222;
+     color: #c78c06;
+     border: 1px solid #c78c06;
+     padding: 5px;
+ }
+
+ /* Header */
+
+ .main-banner {
     position: relative;
-}
+     max-width: 100%;
+     padding: 100px 10px 300px 0px;
+     background-image: url("../images/main-banner.jpg");
+     background-size: 100% 100%;
+ }
 
-.main-banner img{
-    max-width: 100%;
-    height: auto;
-    background-color: #222;
-}
+ .hero-box {
+     margin: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+     color: white;
+     position: absolute;
+     top: 10%;
+     padding: 40px 10px 10px 10px;
+ }
 
-.hero-box{
-    margin: 0;
-    background-color: #222;
-   color: white;
-   position: absolute;
-   top: 12%;
-   padding: 40px 10px 10px 10px;
-}
+ .hero-box h1 {
+     font-size: 45px;
+     font-weight: bolder;
+     line-height: 1.5em;
+     padding-bottom: 15px;
+ }
 
-.hero-box h1{
-    font-size: 45px;
-    font-weight: bolder;
+ .hero-box p {
+     font-size: 11px;
+     font-weight: normal;
+     line-height: 1.5em;
+     padding-bottom: 10px;
+ }
+
+ .hero-box button {
+     padding: 20px;
+     background-color: #c78c06;
+     border: none;
+     margin-right: 2px;
+ }
+
+ .fa-sharp,
+ .fa-solid,
+ .fa-play {
+     padding-left: 10px;
+ }
+
+ /* About us */
+
+ .about-us {
+     background-color: #ffe6ac;
+
+ }
+
+ .ping-pong img {
+     max-width: 96%;
+     height: auto;
+     padding: 10px;
+ }
+
+ .about-text h2 {
+     font-size: 35px;
+     font-weight: bolder;
+     line-height: 1.5em;
+     padding: 10px 10px 10px 10px;
+ }
+
+ .about-text p {
+     font-size: 11px;
+     font-weight: normal;
+     line-height: 1.5em;
+     padding: 0px 10px 15px 10px;
+ }
+
+ /* Our Services  and Teams*/
+
+
+ .our-servteams h2 {
+     font-size: 35px;
+     font-weight: bolder;
+     line-height: 1.5em;
+     padding: 18px 0px 0px 10px;
+ }
+
+
+ .servteams-box {
+     background-color: #ffe6ac;
+     margin: 10px;
+ }
+
+ .servteams-img img {
+     width: 100%;
+     height: auto;
+ }
+
+ .servteams-text {
+     padding-left: 10px;
+ }
+
+ .servteams-text h3 {
+     font-size: 24px;
+     font-weight: 700;
+     line-height: 1.5em;
+     padding: 10px 10px 2px 0px;
+ }
+
+ .our-servteams h4 {
+     font-size: 13px;
+     font-weight: 800;
+     padding-bottom: 3px;
+     padding-right: 15px;
+     border-bottom: 2px solid #c78c06;
+     bottom: 50%;
+     
+
+ }
+
+ .servteams-text p {
+     font-size: 10px;
+     font-weight: 500;
+     line-height: 1.5em;
+     padding: 10px 10px 15px 0px;
+ }
+
+ .servteams-text button {
+     padding: 20px;
+     color: white;
+     background-color: #222;
+     border: none;
+     margin-bottom: 10px;
+ }
+
+ .fa-sharp,
+ .fa-solid,
+ .fa-play {
+     padding-left: 10px;
+ }
+
+ /* Our Vision */
+
+ .our-vision {
+    position: relative;
+     max-width: 100%;
+     padding: 100px 10px 100px 10px;
+     background-image: url("../images/vision.jpg");
+     background-position: 40% 50%;
+     background-size: 100% auto;
+ }
+
+ .vision-text {
+     margin: 0;
+     color: white;
+     position: absolute;
+     top: 10%;
+ }
+
+ .vision-text h2 {
+     font-size: 25px;
+     font-weight: bolder;
+     line-height: 1.5em;
+     padding-bottom: 15px;
+ }
+
+ .vision-text p {
+     font-size: 11px;
+     font-weight: normal;
+     line-height: 1.5em;
+     padding-bottom: 10px;
+ }
+
+ .vision-text button {
+     padding: 20px;
+     color: white;
+     background-color: #222;
+     border: 1px solid #c78c06;
+     margin-right: 2px;
+ }
+
+
+ /* Contact Us*/
+
+ .contact h2{
+    font-size: 35px;
+     font-weight: 700;
+     line-height: 1.5em;
+     padding: 18px 0px 0px 10px;
+ }
+
+ .contact h3{
+    font-size: 24px;
+    font-weight: 700;
     line-height: 1.5em;
-    padding-bottom: 15px;
+    padding: 10px;
+ }
+
+ .contact-form{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px;
+ }
+
+ .long{
+    width: 98%;
+    margin: 8px 0px 15px 0px;
 }
 
-.hero-box p{
+.contact-form button[type='submit'] {
+    font-size: 18px;
+    background-color: #222;
+    color: #c78c06;
+    padding: 2px;
+}
+
+/* Table section */
+
+.table-sec{
+    padding: 10px;
+}
+
+.table-sec h3{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.table-items{
+    width: 100%;
+    height: 70px;
+    border: 2px solid #222;
+}
+
+.table-items th{
+    text-align: center;
+    background-color: #ffe6ac;
+}
+
+.table-items, th , td{
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #222;
+    padding: 15px;
+}
+
+/* Map section */
+
+.map iframe{
+    width: 96%;
+    margin: 10px;
+
+}
+
+.map h3{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5em;
+    padding: 10px;  
+}
+
+
+footer p{
     font-size: 11px;
-    font-weight: normal;
-    line-height: 1.5em;
-    padding-bottom: 10px;
-}
-
-.hero-box button{
-    padding: 20px;
-    background-color: #c78c06;
     border: none;
-    margin-right: 2px;
+    background-color: #222;
+    color: #c78c06;
+    padding:10px;
 }
 
-.fa-sharp,
-.fa-solid,
-.fa-play{
-    padding-left:10px;
+footer a{
+    color: #c78c06;
 }
-
