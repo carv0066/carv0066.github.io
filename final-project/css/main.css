@@ -3,13 +3,49 @@
 
  }
 
- .container {
+ /* .container {
      max-width: 1200px;
      margin: 0 auto;
 
- }
+ } */
 
  /* Navigation */
+
+ /* Added each title settings for the whole website */
+ h1 {
+     font-size: 45px;
+     font-weight: bolder;
+     line-height: 1.5em;
+ }
+
+ h2 {
+     font-size: 35px;
+     font-weight: bolder;
+     line-height: 1.5em;
+ }
+
+
+ h3 {
+     font-size: 24px;
+     font-weight: 700;
+     line-height: 1.5em;
+ }
+
+ h4 {
+     font-size: 13px;
+     font-weight: 800;
+     padding-bottom: 3px;
+     padding-right: 15px;
+     border-bottom: 2px solid #c78c06;
+     bottom: 50%;
+ }
+
+ p {
+     font-size: 11px;
+     font-weight: normal;
+     line-height: 1.5em;
+ }
+
 
  /* I add flex to make logo stay on the left and not the center */
  .navig .mobile-logo {
@@ -17,7 +53,9 @@
      background-color: #c78c06;
  }
 
- nav .navig {
+ .navig {
+     max-width: 1200px;
+     margin: 0 auto;
      text-align: center;
      list-style-type: none;
      text-decoration: none;
@@ -49,49 +87,48 @@
      justify-content: center;
      background-color: #222;
  }
-
+/* added length of search bar and added a color to the magnifying glass */
  .search-bar input[type='search'] {
      width: 90%;
      height: 2.2em;
  }
 
-  .search-bar button[type='submit'] {
+ .search-bar button[type='submit'] {
      background-color: #222;
      color: #c78c06;
      border: 1px solid #c78c06;
      padding: 5px;
  }
 
+ nav {
+     background-color: #222;
+ }
+
  /* Header */
 
  .main-banner {
-    position: relative;
-     max-width: 100%;
-     padding: 100px 10px 300px 0px;
+     width: 100%;
+     padding-top: 50px;
+     padding-bottom: 50px;
      background-image: url("../images/main-banner.jpg");
-     background-size: 100% 100%;
+     background-size: cover;
+     background-repeat: no-repeat;
  }
 
+ /* added box with low opacity that hold the text in the header */
  .hero-box {
-     margin: 0;
+     max-width: 1200px;
+     margin: 0 auto;
      background-color: rgba(0, 0, 0, 0.5);
      color: white;
-     position: absolute;
-     top: 10%;
      padding: 40px 10px 10px 10px;
  }
 
  .hero-box h1 {
-     font-size: 45px;
-     font-weight: bolder;
-     line-height: 1.5em;
      padding-bottom: 15px;
  }
 
  .hero-box p {
-     font-size: 11px;
-     font-weight: normal;
-     line-height: 1.5em;
      padding-bottom: 10px;
  }
 
@@ -122,70 +159,44 @@
  }
 
  .about-text h2 {
-     font-size: 35px;
-     font-weight: bolder;
-     line-height: 1.5em;
      padding: 10px 10px 10px 10px;
  }
 
  .about-text p {
-     font-size: 11px;
-     font-weight: normal;
-     line-height: 1.5em;
      padding: 0px 10px 15px 10px;
  }
 
  /* Our Services  and Teams*/
 
-
- .our-servteams h2 {
-     font-size: 35px;
-     font-weight: bolder;
-     line-height: 1.5em;
+/* added padding so the text wouldn't touch the sides */
+ .our-services h2 {
      padding: 18px 0px 0px 10px;
  }
 
 
- .servteams-box {
+ .services-box {
      background-color: #ffe6ac;
      margin: 10px;
  }
 
- .servteams-img img {
+ .services-img img {
      width: 100%;
      height: auto;
  }
 
- .servteams-text {
+ .services-text {
      padding-left: 10px;
  }
 
- .servteams-text h3 {
-     font-size: 24px;
-     font-weight: 700;
-     line-height: 1.5em;
+ .services-text h3 {
      padding: 10px 10px 2px 0px;
  }
 
- .our-servteams h4 {
-     font-size: 13px;
-     font-weight: 800;
-     padding-bottom: 3px;
-     padding-right: 15px;
-     border-bottom: 2px solid #c78c06;
-     bottom: 50%;
-     
-
- }
-
- .servteams-text p {
-     font-size: 10px;
-     font-weight: 500;
-     line-height: 1.5em;
+ .services-text p {
      padding: 10px 10px 15px 0px;
  }
 
- .servteams-text button {
+ .services-text button {
      padding: 20px;
      color: white;
      background-color: #222;
@@ -201,33 +212,26 @@
 
  /* Our Vision */
 
+ /* Added background image for the vision section and positioned it */
+
  .our-vision {
-    position: relative;
-     max-width: 100%;
-     padding: 100px 10px 100px 10px;
+    padding: 20px;
      background-image: url("../images/vision.jpg");
+     height: 200px;
+     background-size: cover;
      background-position: 40% 50%;
-     background-size: 100% auto;
+     background-repeat: no-repeat;
  }
 
  .vision-text {
-     margin: 0;
      color: white;
-     position: absolute;
-     top: 10%;
  }
 
  .vision-text h2 {
-     font-size: 25px;
-     font-weight: bolder;
-     line-height: 1.5em;
      padding-bottom: 15px;
  }
 
  .vision-text p {
-     font-size: 11px;
-     font-weight: normal;
-     line-height: 1.5em;
      padding-bottom: 10px;
  }
 
@@ -239,95 +243,380 @@
      margin-right: 2px;
  }
 
+ /* Teams Section */
+ .teams-grid h2 {
+     padding-left: 10px;
+ }
+
+ .teams-box1,
+ .teams-box2 {
+     background-color: #ffe6ac;
+     margin: 0 10px;
+ }
+
+ .teams-grid h2 {
+     margin-top: 20px;
+ }
+
+ .teams-text1 {
+     margin: 10px;
+     padding-left: 10px;
+ }
+
+ .teams-img1 img {
+     width: 100%;
+     height: auto;
+ }
+
+ .teams-text1 h3 {
+     padding: 10px 10px 2px 0px;
+ }
+
+ .teams-text1 p {
+     padding: 10px 10px 15px 0px;
+ }
+
+ .teams-text1 h4 {
+     margin-right: 20px;
+ }
+
+
+ .teams-text2 {
+     margin: 10px;
+     padding-left: 10px;
+ }
+
+ .teams-img2 img {
+     width: 100%;
+     height: auto;
+ }
+
+ .teams-text2 h3 {
+     padding: 10px 10px 2px 0px;
+ }
+
+ .teams-text2 p {
+     padding: 10px 10px 15px 0px;
+ }
+
+ .teams-text2 h4 {
+     margin-right: 20px;
+ }
+
+
 
  /* Contact Us*/
 
- .contact h2{
-    font-size: 35px;
-     font-weight: 700;
-     line-height: 1.5em;
+ .contact {
+    max-width: 1200px;
+        margin: 0 auto;
+ }
+ .contact h2 {
      padding: 18px 0px 0px 10px;
  }
 
- .contact h3{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.5em;
-    padding: 10px;
+ .contact h3 {
+     padding: 10px;
  }
 
- .contact-form{
-    font-size: 12px;
-    font-weight: 600;
-    padding: 10px;
+ .contact-form {
+    
+     font-size: 12px;
+     font-weight: 600;
+     padding: 10px;
  }
 
- .long{
-    width: 98%;
-    margin: 8px 0px 15px 0px;
-}
+ .long {
+     width: 98%;
+     margin: 8px 0px 15px 0px;
+ }
 
-.contact-form button[type='submit'] {
-    font-size: 18px;
-    background-color: #222;
-    color: #c78c06;
-    padding: 2px;
-}
+ .contact-form button[type='submit'] {
+     font-size: 18px;
+     background-color: #222;
+     color: #c78c06;
+     padding: 2px;
+ }
 
-/* Table section */
-
-.table-sec{
-    padding: 10px;
-}
-
-.table-sec h3{
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1.5em;
-}
-
-.table-items{
-    width: 100%;
-    height: 70px;
-    border: 2px solid #222;
-}
-
-.table-items th{
-    text-align: center;
-    background-color: #ffe6ac;
-}
-
-.table-items, th , td{
-    font-size: 12px;
-    font-weight: 600;
-    border: 1px solid #222;
-    padding: 15px;
-}
-
-/* Map section */
-
-.map iframe{
-    width: 96%;
-    margin: 10px;
-
-}
-
-.map h3{
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1.5em;
-    padding: 10px;  
-}
+ /* Table section */
+/* added some style to the table */
+ .table-sec {
+     padding: 10px;
+ }
 
 
-footer p{
-    font-size: 11px;
-    border: none;
-    background-color: #222;
-    color: #c78c06;
-    padding:10px;
-}
+ .table-items {
+     width: 100%;
+     height: 70px;
+     border: 2px solid #222;
+ }
 
-footer a{
-    color: #c78c06;
-}
+ .table-items th {
+     text-align: center;
+     background-color: #ffe6ac;
+ }
+
+ .table-items,
+ th,
+ td {
+     font-size: 12px;
+     font-weight: 600;
+     border: 1px solid #222;
+     padding: 15px;
+ }
+
+ /* Map section */
+
+ .map iframe {
+     width: 96%;
+     margin: 10px;
+
+ }
+
+ .map h3 {
+     padding: 10px;
+ }
+
+ footer p{
+    max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom:10px;
+ }
+
+
+ footer div {
+     border: none;
+     background-color: #222;
+     color: #c78c06;
+     padding: 10px;
+ }
+
+ footer a {
+     color: #c78c06;
+ }
+
+ /* ************************************************************************************************************ */
+ /* DESKTOP STYLING */
+ /* ************************************************************************************************************ */
+
+ @media screen and (min-width: 760px) {
+
+     /* I changed the display on the nav bar so it would be horizontal instead of vertical */
+
+     .navig {
+         display: flex;
+         background-color: #222;
+         align-items: center;
+         justify-content: center;
+         padding: 0 5em;
+     }
+
+     .navig li {
+         flex-grow: 1;
+     }
+
+     /* I changed the background color for the logo */
+     .navig .mobile-logo {
+         background-color: #222;
+     }
+
+     .search-bar {
+         display: flex;
+         justify-content: flex-start;
+         background-color: #222;
+     }
+
+     /* I removed the width of my search bar */
+     .search-bar {
+         padding-left: 20px;
+
+     }
+
+     /*Main Banner section  */
+
+     .main-banner {
+         height: 350px;
+         background-position: 50% 70%;
+
+     }
+
+     .hero-box {
+         max-width: 1200px;
+         margin: 0 auto;
+
+     }
+
+     .hero-box h1 {
+         font-size: 65px;
+     }
+
+     .hero-box p {
+         font-size: 13px;
+     }
+
+     /* About us Section */
+
+     .about-us {
+         max-width: 1200px;
+         margin: 0 auto;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+
+     }
+
+     .bg-extend {
+         background-color: #ffe6ac;
+     }
+
+     .about-text h2 {
+         padding: 10px 10px 5px 22px;
+     }
+
+     .about-text p {
+         font-size: 13px;
+         font-weight: normal;
+         line-height: 1.5em;
+         padding: 0px 10px 15px 22px;
+     }
+
+     /* Our services section */
+
+     .our-services h2 {
+         padding: 18px 0px 0px 10px;
+     }
+/* Added a grid area to hold all of the services section */
+     .our-services {
+        max-width: 1200px;
+        margin: 0 auto;
+         display: grid;
+         grid-template-columns: repeat(6, 1fr);
+         grid-template-rows: 0.5fr 5fr 4fr;
+         grid-template-areas:
+             "h2 h2 h2 h2 h2 h2"
+             "digital digital digital market market market"
+             "video video web web print print";
+
+     }
+
+     .our-services h2 {
+         grid-area: h2;
+     }
+
+     .services-box:nth-child(2) {
+         grid-area: digital;
+
+     }
+
+     .services-box:nth-child(3) {
+         grid-area: market;
+
+     }
+
+     .services-box:nth-child(4) {
+         grid-area: video;
+
+     }
+
+     .services-box:nth-child(5) {
+         grid-area: web;
+
+     }
+
+     .services-box:nth-child(6) {
+         grid-area: print;
+
+     }
+
+
+     /* Our Vision Section */
+
+     .our-vision {
+         background-image: url("../images/vision.jpg");
+         background-size: cover;
+         background-position: 20% 50%;
+         background-repeat: no-repeat;
+     }
+
+     .vision-text {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+     }
+
+     .vision-text h2 {
+         padding-bottom: 15px;
+     }
+
+     .vision-text p {
+         padding-bottom: 10px;
+         margin-right: 65px;
+     }
+
+     .vision-text button {
+         padding: 20px;
+         color: white;
+         background-color: #222;
+         border: 1px solid #c78c06;
+         margin-right: 2px;
+     }
+
+     /* Teams section */
+
+     /* added a grid column on each box for the team section */
+     .teams-box1 {
+         background-color: #ffe6ac;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+     }
+
+     .teams-box2 {
+         background-color: #ffe6ac;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+     }
+
+     .teams-img2 {
+         grid-column: 2;
+         grid-row: 1;
+     }
+
+     .teams-grid {
+         margin: 0 auto;
+         max-width: 1200px;
+         ;
+     }
+
+
+     /* Contact Us section */
+
+     /* Added a final grid area for the contact section to be able to move the table to the bottom */
+
+     .contact{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: 0.5fr 3fr 2fr;
+        grid-template-areas: 
+        "h2 h2"
+        "message location"
+        "hours hours";
+        
+     }
+
+     .contact h2{
+        grid-area: h2;
+     }
+
+     .message{
+        grid-area: message;
+     }
+
+     .map{
+        grid-area: location;
+     }
+
+     .table-sec{
+        grid-area: hours;
+     }
+ }
